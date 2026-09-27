@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23203d32'/%3E%3Ctext x='7' y='44' font-size='29' fill='%23d9ee78'%3EPA%3C/text%3E%3C/svg%3E">
+  <title>Project Autopsy</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand-mark">PA<span>·</span></div>
+      <div class="sidebar-heading">PROJECT<br>AUTOPSY</div>
+      <p class="sidebar-copy">망하기 전에 읽는<br>프로젝트 사망 보고서</p>
+      <button id="new-project" class="side-new" type="button">＋ 새 프로젝트</button>
+      <div class="side-section">내 프로젝트</div>
+      <nav id="project-list" aria-label="프로젝트 목록"></nav>
+      <div class="sidebar-bottom">
+        <span id="mode-dot" class="mode-dot"></span>
+        <span id="mode-label">모드 확인 중</span>
+      </div>
+    </aside>
+    <main class="workspace">
+      <header class="topbar">
+        <div class="topbar-label">A PREMORTEM LAB / 001</div>
+        <div class="topbar-right">YOUR PLAN, UNDER EXAMINATION</div>
+      </header>
+      <div id="error" class="error-banner" role="alert" hidden></div>
+      <div id="status" class="status-banner" role="status" hidden></div>
+      <div id="app"></div>
+    </main>
+  </div>
+</body>
+</html>
